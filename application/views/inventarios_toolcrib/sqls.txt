@@ -1,0 +1,15 @@
+Consultas para llenar bot
+
+
+INSERT INTO `chatbot2` (queries,replies) select concat(ch.sap,' ',ch.numero_parte,' ',ch.descripcion),concat(ch.descripcion,' ',ch.stock,' ',ch.ubicacion)  from chatbot as ch 
+
+INSERT INTO `chatbot` (queries,replies) select ch.descripcion,concat(ch.descripcion,' ',ch.stock,' ',ch.ubicacion)  from invoriginal as ch 
+
+INSERT INTO `chatbot` (queries,replies) select ch.sap,concat(ch.descripcion,' ',ch.stock,' ',ch.ubicacion)  from invoriginal as ch 
+
+INSERT INTO `chatbot` (queries,replies) select ch.sap,concat(ch.numero_parte,' ',ch.stock,' ',ch.ubicacion)  from invoriginal as ch 
+
+--------Buena
+INSERT INTO `chatbot` (queries,replies) select concat(ch.sap,' ',ch.numero_parte,' ',ch.descripcion),concat("Descripción: ",ch.descripcion,' ,Stock: ',ch.stock,' ,Ubicación: ',ch.ubicacion)  from invoriginal as ch 
+
+

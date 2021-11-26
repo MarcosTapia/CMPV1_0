@@ -1,0 +1,49 @@
+nombre bot: corobot
+username: wewirecoroplastbot
+
+Use this token to access the HTTP API:
+1676714028:AAH0aWRKqqhVIauq-5M6B7Fqz0AundeBdT0
+
+id (lo saque como lo menciono abajo)
+"id":1539275351
+
+Keep your token secure and store it safely, it can be used by anyone to control your bot.
+
+For a description of the Bot API, see this page: https://core.telegram.org/bots/api
+
+Para id mandar cualquier mensaje al bot creado para inicializarlo
+
+Checar la siguiente direccion
+https://api.telegram.org/botXXXXXXXXX:YYYYYYY-YYYYYYYYYYYYYYYYY_YY/getUpdates
+la url del bot:
+https://api.telegram.org/bot1676714028:AAH0aWRKqqhVIauq-5M6B7Fqz0AundeBdT0/getUpdates
+
+la imagen debe ser 150x150
+
+{"ok":true,"result":[{"update_id":295445895,
+"message":{"message_id":1,"from":{"id":1539275351,"is_bot":false,"first_name":"Marcos","last_name":"Tapia"}
+,"chat":{"id":1539275351,"first_name":"Marcos","last_name":"Tapia","type":"private"},"date":1613595857,"text":"/start"
+,"entities":[{"offset":0,"length":6,"type":"bot_command"}]}},{"update_id":295445896,
+"message":{"message_id":2,"from":{"id":1539275351,"is_bot":false,"first_name":"Marcos","last_name":"Tapia",
+"language_code":"es"},"chat":{"id":1539275351,"first_name":"Marcos","last_name":"Tapia","type":"private"},
+"date":1613595883,"text":"Mensaje de inicio"}}]}
+
+
+
+http://localhost:4040/inspect/http
+
+Inside the folder, type : ngrok.exe http 80
+https://api.telegram.org/bot1676714028:AAH0aWRKqqhVIauq-5M6B7Fqz0AundeBdT0/setwebhook?url=https://adfa8cb88332.ngrok.io/webhook/
+En carpeta sin framework
+https://api.telegram.org/bot1676714028:AAH0aWRKqqhVIauq-5M6B7Fqz0AundeBdT0/setwebhook?url=
+Dentro de codeigniter
+https://api.telegram.org/bot1676714028:AAH0aWRKqqhVIauq-5M6B7Fqz0AundeBdT0/setwebhook?url=https://ccedf577fb37.ngrok.io/cmpv1_0/index.php/inventariotoolcrib_controller/TelegramBot
+
+Pegar en navegador la url anterior dependiendo del caso
+
+
+
+
+
+
+
